@@ -49,7 +49,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 nav ul{
@@ -152,6 +151,89 @@ nav a{
     color: var(--white-primary);
     font-size: 14px;
 }
+
+#principal{
+    display: flex;
+    justify-content: center;
+
+
+
+    margin-bottom: 200px;
+}
+
+main{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.ajustService{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex: 1;
+}
+
+.serviceInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px 0 0;
+    min-width: 300px;
+}
+
+.titleAjust{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.text{
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.details{
+    background-color: var(--blue-primary);
+    height: 2px;
+    width: 40px;
+}
+
+.dateService{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+}
+.data, .dateNumber{
+    font-size: 12px;
+    color: var(--white-primary);
+    padding: 5px;
+}
+
+.data{
+    background-color: var(--blue-three);
+    margin-right: 5px;
+}
+.dateNumber{
+    background-color: var(--blue-primary);
+    padding: 0px 11px;
+    line-height: 25px;
+}
+
+.textInformation{
+    color: #000;
+    font-weight: 600;
+    margin: 25px 0;
+    font-size: 25px;
+
+}
+.description{
+    color: var(--black-second);
+    font-size: 13px;
+}
+
 
 
 
