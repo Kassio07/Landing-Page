@@ -49,6 +49,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul{
@@ -233,6 +234,42 @@ aside{
     color: var(--black-second);
     font-size: 13px;
 }
+
+.ajustMa{
+    align-items: flex-start;
+}
+
+.depCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card{
+    min-width:150px;
+    height: 150px;
+    background-color: var(--blue-primary);
+    margin: 3px;
+}
+.phone{
+    margin-top: 20px;
+}
+
+.phone>div{
+    border-bottom: 1px solid var(--black-primaryfoo);
+    font-size: 13px;
+    padding: 10px;
+}
+
+.phone>div i, svg{
+    margin-right: 10px;
+}
+
+/* Footer */
+
+
+
 
 
 
