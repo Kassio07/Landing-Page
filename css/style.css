@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --white-primary:#ffff;
+    --black-primaryfoo:#202020;
+    --black-second:#2c2c2a;
+
+    --blue-primary:#41b3e5;
+    --blue-second:#0284cf;
+    --blue-three:#3156a4;
+
+    --gray-primary:#dfdbda;
+}
+
+
+body{
+    font-family: poppins-ligth;
+}
+
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+/* header/Menu navegação */
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container{
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+.selected, nav ul li a:hover{
+    background-color: var(--blue-primary);
+}
+
+
+/*Seção 1*/
+
+.infoBanner{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 670px;
+}
+
+.ajustBanner{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.bannerText{
+    flex: 1;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.bannerText h1{
+    color: var(--white-primary);
+    font-size: 45px;
+    max-width: 350px;
+    text-shadow: 2px 2px 0px var(--black-second);
+    margin-bottom: 12px;
+}
+
+.bannerText p{
+    color: var(--white-primary);
+    font-size: 16px;
+    max-width: 350px;
+}
+.bannerInfoPrice{
+    height: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    padding: 22px;
+}
+
+.banner1{
+    background-color: var(--blue-primary);
+}
+.banner2{
+    background-color: var(--blue-second);
+}
+.banner3{
+    background-color: var(--blue-three);
+}
+
+.titleCard{
+    color: var(--white-primary);
+    font-size: 22px;
+}
+.textCard{
+    color: var(--gray-primary);
+    font-size: 14px;
+    margin: 15px 0;
+}
+.btnCard{
+    border: 1px solid var(--white-primary);
+    display: inline-block;
+    padding: 5px;
+}
+.banner3ajust>div{
+    border-bottom: 1px solid var(--gray-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: var(--white-primary);
+    font-size: 14px;
+}
+
+
+
+
