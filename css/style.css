@@ -1,277 +1,453 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --white-primary: #ffff;
+  --black-primaryfoo: #202020;
+  --black-second: #2c2c2a;
 
-:root{
-    --white-primary:#ffff;
-    --black-primaryfoo:#202020;
-    --black-second:#2c2c2a;
+  --blue-primary: #41b3e5;
+  --blue-second: #0284cf;
+  --blue-three: #3156a4;
 
-    --blue-primary:#41b3e5;
-    --blue-second:#0284cf;
-    --blue-three:#3156a4;
-
-    --gray-primary:#dfdbda;
+  --gray-primary: #dfdbda;
 }
 
-
-body{
-    font-family: poppins-ligth;
+body {
+  font-family: poppins-ligth;
 }
 
-
-a{
-    text-decoration: none;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 
 /* header/Menu navegação */
 
-header{
-    display: flex;
-    justify-content: center;
-    height: 120px;
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
 }
 
-.container{
-    width: 980px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.container {
+  width: 980px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
+nav ul {
+  display: flex;
+  flex-direction: row;
 }
 
-nav a{
-    display: block;
-    padding: 15px;
-    transition: all 0.5s;
+nav a {
+  display: block;
+  padding: 15px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
-.selected, nav ul li a:hover{
-    background-color: var(--blue-primary);
+.selected,
+nav ul li a:hover {
+  background-color: var(--blue-primary);
 }
-
 
 /*Seção 1*/
 
-.infoBanner{
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/img1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 670px;
+.infoBanner {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/img1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 670px;
 }
 
-.ajustBanner{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
+.ajustBanner {
+  display: flex;
+  flex-direction: column;
 }
 
-.bannerText{
-    flex: 1;
-    margin-top: 50px;
-    width: 100%;
+.bannerText {
+  flex: 1;
+  margin-top: 50px;
+  width: 100%;
 }
 
-.bannerText h1{
-    color: var(--white-primary);
-    font-size: 45px;
-    max-width: 350px;
-    text-shadow: 2px 2px 0px var(--black-second);
-    margin-bottom: 12px;
+.bannerText h1 {
+  color: var(--white-primary);
+  font-size: 45px;
+  max-width: 350px;
+  text-shadow: 2px 2px 0px var(--black-second);
+  margin-bottom: 12px;
 }
 
-.bannerText p{
-    color: var(--white-primary);
-    font-size: 16px;
-    max-width: 350px;
+.bannerText p {
+  color: var(--white-primary);
+  font-size: 16px;
+  max-width: 350px;
 }
-.bannerInfoPrice{
-    height: 210px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+.bannerInfoPrice {
+  height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .banner1,
 .banner2,
-.banner3{
-    flex: 1;
-    padding: 22px;
+.banner3 {
+  flex: 1;
+  padding: 22px;
 }
 
-.banner1{
-    background-color: var(--blue-primary);
+.banner1 {
+  background-color: var(--blue-primary);
 }
-.banner2{
-    background-color: var(--blue-second);
+.banner2 {
+  background-color: var(--blue-second);
 }
-.banner3{
-    background-color: var(--blue-three);
-}
-
-.titleCard{
-    color: var(--white-primary);
-    font-size: 22px;
-}
-.textCard{
-    color: var(--gray-primary);
-    font-size: 14px;
-    margin: 15px 0;
-}
-.btnCard{
-    border: 1px solid var(--white-primary);
-    display: inline-block;
-    padding: 5px;
-}
-.banner3ajust>div{
-    border-bottom: 1px solid var(--gray-primary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 0;
-    color: var(--white-primary);
-    font-size: 14px;
+.banner3 {
+  background-color: var(--blue-three);
 }
 
-#principal{
-    display: flex;
-    justify-content: center;
-
-
-
-    margin-bottom: 200px;
+.titleCard {
+  color: var(--white-primary);
+  font-size: 22px;
+}
+.textCard {
+  color: var(--gray-primary);
+  font-size: 14px;
+  margin: 15px 0;
+}
+.btnCard {
+  border: 1px solid var(--white-primary);
+  display: inline-block;
+  padding: 5px;
+}
+.banner3ajust > div {
+  border-bottom: 1px solid var(--gray-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: var(--white-primary);
+  font-size: 14px;
 }
 
-main{
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-}
-.ajustService{
-    display: flex;
-    flex-wrap: wrap;
-}
-aside{
-    flex: 1;
+#principal {
+  display: flex;
+  justify-content: center;
 }
 
-.serviceInfo{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin: 30px 10px 0 0;
-    min-width: 300px;
+main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.ajustService {
+  display: flex;
+  flex-wrap: wrap;
+}
+aside {
+  flex: 1;
 }
 
-.titleAjust{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+.serviceInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px 0 0;
+  min-width: 300px;
 }
 
-.text{
-    color: #000;
-    font-weight: 600;
-    font-size: 18px;
+.titleAjust {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
-.details{
-    background-color: var(--blue-primary);
-    height: 2px;
-    width: 40px;
+.text {
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.dateService{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-
-}
-.data, .dateNumber{
-    font-size: 12px;
-    color: var(--white-primary);
-    padding: 5px;
+.details {
+  background-color: var(--blue-primary);
+  height: 2px;
+  width: 40px;
 }
 
-.data{
-    background-color: var(--blue-three);
-    margin-right: 5px;
+.dateService {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
 }
-.dateNumber{
-    background-color: var(--blue-primary);
-    padding: 0px 11px;
-    line-height: 25px;
-}
-
-.textInformation{
-    color: #000;
-    font-weight: 600;
-    margin: 25px 0;
-    font-size: 25px;
-
-}
-.description{
-    color: var(--black-second);
-    font-size: 13px;
+.data,
+.dateNumber {
+  font-size: 12px;
+  color: var(--white-primary);
+  padding: 5px;
 }
 
-.ajustMa{
-    align-items: flex-start;
+.data {
+  background-color: var(--blue-three);
+  margin-right: 5px;
+}
+.dateNumber {
+  background-color: var(--blue-primary);
+  padding: 0px 11px;
+  line-height: 25px;
 }
 
-.depCard{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 30px;
+.textInformation {
+  color: #000;
+  font-weight: 600;
+  margin: 25px 0;
+  font-size: 25px;
+}
+.description {
+  color: var(--black-second);
+  font-size: 13px;
 }
 
-.card{
-    min-width:150px;
-    height: 150px;
-    background-color: var(--blue-primary);
-    margin: 3px;
-}
-.phone{
-    margin-top: 20px;
+.ajustMa {
+  align-items: flex-start;
 }
 
-.phone>div{
-    border-bottom: 1px solid var(--black-primaryfoo);
-    font-size: 13px;
-    padding: 10px;
+.depCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.phone>div i, svg{
-    margin-right: 10px;
+.card {
+  min-width: 150px;
+  height: 150px;
+  background-color: var(--blue-primary);
+  margin: 3px;
+}
+.phone {
+  margin-top: 20px;
+}
+
+.phone > div {
+  border-bottom: 1px solid var(--black-primaryfoo);
+  font-size: 13px;
+  padding: 10px;
+}
+
+.phone > div i,
+svg {
+  margin-right: 10px;
 }
 
 /* Footer */
 
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-primaryfoo);
+  margin-top: 50px;
+}
 
+.ajustFoo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  height: 100px;
+}
+.footConatiner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
+.footContact {
+  flex: 1;
+}
 
+.footTitle {
+  color: var(--white-primary);
+  font-size: 14px;
+}
 
+.infoFoot {
+  color: var(--gray-primary);
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.infoFoot > div:first-child {
+  max-width: 100px;
+}
+.infoFoot > div:last-child {
+  max-width: 150px;
+}
+.iconsFoot {
+  padding: 20px 0;
+}
 
+.iconsFoot > svg {
+  fill: var(--white-primary);
+}
+
+.textCard > strong {
+  color: var(--blue-primary);
+  font-size: 8px;
+}
+
+.textFoot {
+  font-size: 11px;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+}
+
+.rights {
+  color: var(--gray-primary);
+  font-size: 13px;
+  text-align: center;
+  border-top: 1px solid var(--gray-primary);
+  width: 100%;
+}
+
+.menuMobil {
+  display: none;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+.menuMobil i {
+  font-size: 28px;
+}
+.openerMenu {
+  display: flex;
+}
+
+/* Medias Query */
+
+@media screen and (max-width: 992px) {
+  /*Laptop */
+  .banner1,
+  .banner2,
+  .banner3 {
+    padding: 10px;
+  }
+
+  #principal {
+    padding: 10px;
+  }
+
+  .depCard {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Tablet*/
+  header > .container {
+    flex-direction: column;
+    padding: 10px 0 0 0;
+  }
+  .banner1,
+  .banner2,
+  .banner3 {
+    padding: 10px;
+  }
+  .bannerInfoPrice {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Celular*/
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 200px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: var(--blue-second);
+    z-index: 999;
+  }
+
+  ul li {
+    text-align: center;
+  }
+
+  ul li a {
+    color: var(--white-primary);
+  }
+  header > .container {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 280px;
+  }
+
+  .bannerInfoPrice {
+    flex-direction: column;
+  }
+
+  .bannerText {
+    margin-top: 0px;
+  }
+
+  .bannerText h1 {
+    font-size: 38px;
+  }
+  .bannerText p {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  .infoBanner {
+    margin-bottom: 80px;
+  }
+  .ajustMa {
+    flex-direction: column;
+  }
+  .footConatiner {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .textInformation {
+    font-size: 20px;
+  }
+  .titleCard {
+    font-size: 20px;
+  }
+  .menuMobil {
+    display: flex;
+  }
+}
